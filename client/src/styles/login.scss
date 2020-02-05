@@ -1,0 +1,55 @@
+@import 'root.scss';
+
+.container{
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    .login-wrapper{
+        height: 370px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        .remember{
+            color: $general-text-color;
+        }
+        .remember input{
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            margin-right: 5px;
+        }
+        .login-btn{
+            color: $general-text-color;
+            background-color: $primary-color;
+            width: 100px;
+        }   
+        .login-btn:hover{
+            color: $white-color;
+            background-color: #4780c1;
+        }
+        .fas{
+            color: $white-color; 
+        }
+        .input-group-prepend span{
+            width: 50px;
+            background-color: $primary-color;
+            color: $general-text-color;
+            border:0 !important;
+        }   
+        input:focus{
+            outline: 0 0 0 0  !important;
+            box-shadow: 0 0 0 0 !important;
+        }
+    }
+    .error-message, .error-msg{
+        color: $red-color;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+

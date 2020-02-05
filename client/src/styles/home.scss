@@ -1,0 +1,84 @@
+@import 'root.scss';
+
+.main-content{
+    padding: 0 100px;
+    .home-wrapper{
+        form{
+            height: auto;
+            display: flex;
+            padding: 25px 50px;
+            justify-content: space-between;
+            .filters-dropdown{
+                min-width: 300px;
+            }
+            .form-group{
+                width: 300px;
+            }
+        }
+        .filters-details-content{
+            .continue{
+                display: flex;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+        }
+        .results-wrapper{
+            text-align: center;
+            margin: 0 auto;
+            max-width: 250px;
+            padding: 10px;
+        }
+        .search-bar, .filters-selection, .filters-details, .results-details{
+            padding: 0;
+            margin: 15px 0;
+        }
+        .search-bar-header, .filters-selection-header, .filters-details-header, .results-details-header{
+            height: 30px;
+            background-color: $primary-color;
+            p{
+                color: $white-color;
+                padding: 5px 10px;
+                font-weight: bold;
+            }
+        }
+        .search-bar-content, .filters-selection-content, .filters-details-content, .results-details-content{
+            background-color: $secondary-color;
+            padding: 25px 50px;
+            height: auto;
+        }
+        .no-results{
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .logout-link{
+        position: absolute;
+        top: 20px;
+        right: 120px;
+        font-size: 18px;
+        a{
+            text-decoration: none;
+            color: $general-text-color;
+        }
+    }
+}
+.logout-wrapper{
+    padding: 30px 100px;
+    text-align: center;
+    margin: 0 auto;
+    p{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .query-results{
+        float: left;
+    }
+    .queries-wrapper{
+        min-width: 400px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    table div{
+        padding: 10px;
+    }
+}
